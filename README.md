@@ -1,3 +1,3 @@
 # klipper_config
-this is my printer.cfg for my voron v2.4 350. 
+this is my printer.cfg for my CoreXY_B . 
 !!! Use it on your own risk !!!
