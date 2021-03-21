@@ -1,9 +1,10 @@
 [Variables]
 filament_loaded = 'true'
-filament_used = 28127.1937
+filament_used = 0
 filterusetime = 0
-lastservicetime = 537380
-plate_array = [('Mueller', 0.3), ('Energetics', 0.0), ('Texture', 0.35), ('En Thick', 0.3)]
-plate_index = 3
-totalprintingtime = 537380
+lastservicetime = 0
+plate_array = [('ABS', 0.0), ('ABS_per', 0.0)]
+plate_index = 1
+totalprintingtime = 0
+
 
