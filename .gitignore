@@ -3,6 +3,7 @@
 .mainsail.json
 .variables.stb
 printer-*.cfg
+timelapse
 *.png
 *.csv
 *.jpg
