@@ -1,7 +1,6 @@
 *.log
 .fluidd.json
 .mainsail.json
-.variables.stb
 printer-*.cfg
 /timelapse
 *.png
