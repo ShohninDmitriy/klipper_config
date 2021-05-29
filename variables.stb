@@ -1,6 +1,6 @@
 [Variables]
 filament_loaded = 'true'
-filament_used = -282126.03781
+filament_used = -282126.0378
 filterusetime = 42877
 lastservicetime = 42877
 plate_array = [('ABS', 0.0), ('ABS_per', 0.0), ('New', 0.0)]
