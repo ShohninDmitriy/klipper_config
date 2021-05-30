@@ -1,9 +1,9 @@
 [Variables]
 filament_loaded = 'true'
-filament_used = -262719.594825
-filterusetime = 51820
-lastservicetime = 51820
+filament_used = -259145.213963
+filterusetime = 54122
+lastservicetime = 54122
 plate_array = [('ABS', 0.0), ('ABS_per', 0.0)]
 plate_index = 0
-totalprintingtime = 51820
+totalprintingtime = 54122
 
