@@ -3,6 +3,7 @@
 .mainsail.json
 printer-*.cfg
 /timelapse
+/input_shaper
 *.png
 *.csv
 *.jpg
