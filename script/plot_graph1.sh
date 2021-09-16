@@ -12,13 +12,13 @@ is_folder=~/klipper_config/input_shaper
 remove_old() {
   if [ -d $is_folder ]; then
     cd $is_folder
-    rm -f raw_data_axis*_old.csv
+    rm -f raw_data_axi*_old.csv
     rm -f resonances_old.png
     if [ -e raw_data_axis=1.000,1.000.csv ]; then
-      mv raw_data_axis=1.000,1.000.csv raw_data_axis=1.000,1.000_old.csv
+      mv raw_data_axis=1.000,1.000.csv raw_data_axi=1.000,1.000_old.csv
     fi
     if [ -e raw_data_axis=1.000,-1.000.csv ]; then
-    mv raw_data_axis=1.000,-1.000.csv raw_data_axis=1.000,-1.000_old.csv
+    mv raw_data_axis=1.000,-1.000.csv raw_data_axi=1.000,-1.000_old.csv
     fi
     if [ -e resonances.png ]; then
       mv resonances.png resonances_old.png
