@@ -12,19 +12,16 @@ is_folder=~/klipper_config/input_shaper
 remove_old() {
   if [ -d $is_folder ]; then
     cd $is_folder
-    rm -f resonances*_old.csv
-    rm -f shaper_calibrate*_old.png
-    if [ -e resonances_x.csv ]; then
-      mv resonances_x.csv resonances_x_old.csv
+    rm -f raw_data_axis*_old.csv
+    rm -f resonances_old.png
+    if [ -e raw_data_axis=1.000,1.000.csv ]; then
+      mv raw_data_axis=1.000,1.000.csv raw_data_axis=1.000,1.000_old.csv
     fi
-    if [ -e resonances_y.csv ]; then
-    mv resonances_y.csv resonances_y_old.csv
+    if [ -e raw_data_axis=1.000,-1.000.csv ]; then
+    mv raw_data_axis=1.000,-1.000.csv raw_data_axis=1.000,-1.000_old.csv
     fi
-    if [ -e shaper_calibrate_x.png ]; then
-      mv shaper_calibrate_x.png shaper_calibrate_x_old.png
-    fi
-    if [ -e shaper_calibrate_y.png ]; then
-      mv shaper_calibrate_y.png shaper_calibrate_y_old.png
+    if [ -e resonances.png ]; then
+      mv resonances.png resonances_old.png
     fi
   else
     mkdir $is_folder
@@ -32,10 +29,8 @@ remove_old() {
 }
 
 plot_new() {
-  mv /tmp/resonances_x_*.csv $is_folder/resonances_x.csv
-  mv /tmp/resonances_y_*.csv $is_folder/resonances_y.csv
-  ~/klipper/scripts/calibrate_shaper.py $is_folder/resonances_x.csv -o $is_folder/shaper_calibrate_x.png
-  ~/klipper/scripts/calibrate_shaper.py $is_folder/resonances_y.csv -o $is_folder/shaper_calibrate_y.png
+  mv /tmp/raw_data_axis=1.000,1.000_*.csv $is_folder/raw_data_axis=1.000,1.000.csv
+  mv /tmp/raw_data_axis=1.000,-1.000_*.csv $is_folder/raw_data_axis=1.000,-1.000.csv
   ~/klipper/scripts/graph_accelerometer.py -c $is_folder/raw_data_axis*.csv -o $is_folder/resonances.png
 }
 
