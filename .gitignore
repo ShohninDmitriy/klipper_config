@@ -2,7 +2,8 @@
 .fluidd.json
 .mainsail.json
 printer-*.cfg
-*variables.stb
+.variables.stb
+variables.stb
 /timelapse
 /input_shaper
 *.png
