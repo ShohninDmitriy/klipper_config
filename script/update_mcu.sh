@@ -7,22 +7,22 @@ cd ~/klipper
 echo "Start update mcu octopus"
 echo ""
 make clean
-#make menuconfig KCONFIG_CONFIG=/home/pi/klipper_config/script/config.octopus
-make KCONFIG=/home/pi/klipper_config/script/config.octopus
-read -p "mcu octopus firmware built, please check above for any errors. Press [Enter] to continue flashing, or [Ctrl+C] to abort"
-make flash KCONFIG_CONFIG=/home/pi/klipper_config/script/config.octopus FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f446xx_10011-if00
+#make menuconfig KCONFIG_CONFIG=/home/pi/klipper_config/script/config.octopus_mcu
+make KCONFIG_CONFIG=/home/pi/klipper_config/script/config.octopus_mcu
+#read -p "mcu octopus firmware built, please check above for any errors. Press [Enter] to continue flashing, or [Ctrl+C] to abort"
+make flash KCONFIG_CONFIG=/home/pi/klipper_config/script/config.octopus_mcu FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f446xx_10011-if00
 echo "Finish update mcu octopus"
 echo ""
 
-# Update mcu XYE
+# Update mcu E
 echo "Start update mcu stm32f103"
 echo ""
 make clean
-#make menuconfig KCONFIG_CONFIG=/home/pi/klipper_config/script/config.stm32f103
-make KCONFIG_CONFIG=/home/pi/klipper_config/script/config.stm32f103
-read -p "mcu stm32f103 firmware built, please check above for any errors. Press [Enter] to continue, or [Ctrl+C] to abort"
-make flash KCONFIG_CONFIG=/home/pi/klipper_config/script/config.stm32f103 FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f103xe_10022-if00
-read -p "mcu stm32f103 firmware flashed, please check above for any errors. Press [Enter] to continue, or [Ctrl+C] to abort"
+#make menuconfig KCONFIG_CONFIG=/home/pi/klipper_config/script/config.stm32f103_mcu
+make KCONFIG_CONFIG=/home/pi/klipper_config/script/config.stm32f103_mcu
+#read -p "mcu stm32f103 firmware built, please check above for any errors. Press [Enter] to continue, or [Ctrl+C] to abort"
+make flash KCONFIG_CONFIG=/home/pi/klipper_config/script/config.stm32f103_mcu FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f103xe_10012-if00
+#read -p "mcu stm32f103 firmware flashed, please check above for any errors. Press [Enter] to continue, or [Ctrl+C] to abort"
 echo "Finish update mcu stm32f103"
 echo ""
 
