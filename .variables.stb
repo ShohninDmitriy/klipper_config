@@ -4,4 +4,4 @@ filament = [{'id': 'ESUN_ABS+_Black', 'val': [{'nozzle': 0.4, 'pa': 0.05}, {'noz
 filament_loaded = 'true'
 filament_sensor = {'toolhead_runout': 0}
 plates = {'array': [{'name': 'Mueller', 'offset': 0.0}, {'name': 'Energetics', 'offset': 0.0}, {'name': 'Texture', 'offset': -0.1}, {'name': 'En_Thick', 'offset': 0.0}], 'index': 0}
-print_stats = {'filament': 2779399.9760404243, 'time': {'filter': 99175, 'total': 3274790, 'service': 965328}}
+print_stats = {'filament': 28127.1937, 'time': {'filter': 0, 'total': 537380, 'service': 537380}}
