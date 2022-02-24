@@ -12,3 +12,4 @@ printer-*.cfg
 /logs
 *.txt
 *.mp4
+.moonraker.conf.bkp
