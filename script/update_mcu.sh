@@ -25,5 +25,16 @@ make flash KCONFIG_CONFIG=/home/pi/klipper_config/script/config.stm32f103_mcu FL
 #read -p "mcu stm32f103 firmware flashed, please check above for any errors. Press [Enter] to continue, or [Ctrl+C] to abort"
 echo "Finish update mcu stm32f103"
 echo ""
+# Update mcu SHT42
+echo "Start update mcu SHT42"
+echo ""
+make clean
+#make menuconfig KCONFIG_CONFIG=/home/pi/klipper_config/script/config.SHT42_mcu
+make KCONFIG_CONFIG=/home/pi/klipper_config/script/config.SHT42_mcu
+#read -p "mcu SHT42 firmware built, please check above for any errors. Press [Enter] to continue, or [Ctrl+C] to abort"
+make flash KCONFIG_CONFIG=/home/pi/klipper_config/script/config.stm32f103_mcu FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f072xb_10013-if00
+#read -p "mcu SHT42 firmware flashed, please check above for any errors. Press [Enter] to continue, or [Ctrl+C] to abort"
+echo "Finish update mcu SHT42"
+echo ""
 
 sudo service klipper start
